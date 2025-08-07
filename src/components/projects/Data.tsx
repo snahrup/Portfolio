@@ -5,22 +5,54 @@ import { Separator } from '@/components/ui/separator';
 // Steve Nahrup's projects
 const PROJECT_CONTENT = [
   {
-    title: 'Strainprint AI Automation Platform',
+    title: 'Strainprint ML Pipeline - Cannabis Treatment Optimization',
     description:
-      'Enterprise-scale AI automation platform unifying data, analytics, and operations for cannabis analytics leader. Implemented OpenAI/LangGraph agents with n8n orchestration, ML-based inventory forecasting, and personalized strain recommendation engine using Fabric PySpark notebooks. Reduced manual processes by 40% and cycle times from days to hours.',
+      'Built comprehensive machine learning pipeline on Microsoft Fabric for cannabis treatment optimization, processing 1.4M+ sessions from 30K+ users. Implemented end-to-end data architecture from Power BI extraction through Bronze/Silver/Gold medallion layers to production ML models. Developed three core ML systems: Efficacy Prediction (GBT classifier achieving 87% AUC), Collaborative Filtering Recommendation System (ALS with RMSE 0.23), and Tolerance Detection Model identifying diminishing returns patterns. Pipeline automates data extraction via DAX queries, feature engineering with PySpark, and model training/deployment through MLflow. Reduced treatment recommendation time from hours to milliseconds while improving patient outcomes by 25%.',
     techStack: [
       'Microsoft Fabric',
       'Power BI',
-      'OpenAI/LangGraph',
-      'n8n',
       'PySpark',
-      'AWS',
+      'MLflow',
+      'Delta Lake',
+      'Gradient Boosted Trees',
+      'Collaborative Filtering (ALS)',
+      'DAX',
       'Python',
-      'Machine Learning',
-      'Row-Level Security',
-      'CI/CD',
+      'Lakehouse Architecture',
+      'Feature Engineering',
+      'Real-time Serving',
     ],
     date: '2025',
+    metrics: [
+      '1.4M+ sessions processed from 36K+ strains',
+      '87% AUC for efficacy prediction',
+      '25% improvement in treatment outcomes',
+      'Response time reduced from hours to <100ms',
+      'Automated ML pipeline with daily retraining',
+      '3 production ML models deployed',
+    ],
+    links: [
+      {
+        name: 'Technical Documentation',
+        url: 'https://github.com/snahrup/CascadeProjects/tree/main/Strainprint_ML_Pipeline',
+      },
+    ],
+  },
+  {
+    title: 'Strainprint AI Automation Platform',
+    description:
+      'Enterprise-scale AI automation platform unifying data, analytics, and operations for cannabis analytics leader. Implemented OpenAI/LangGraph agents with n8n orchestration for automated customer support and inventory management. Built personalized strain recommendation engine using collaborative filtering. Reduced manual processes by 40% and cycle times from days to hours.',
+    techStack: [
+      'OpenAI/LangGraph',
+      'n8n',
+      'AWS',
+      'Python',
+      'Row-Level Security',
+      'CI/CD',
+      'REST APIs',
+      'Automation Workflows',
+    ],
+    date: '2024-2025',
     metrics: [
       '40% reduction in manual processes',
       'Cycle times reduced from days to hours',
@@ -73,7 +105,8 @@ const PROJECT_CONTENT = [
       'Enterprise data governance framework',
       'Tenant-level security implementation',
     ],
-  },  {
+  },
+  {
     title: 'Microsoft Fabric MCP Server',
     description:
       'Custom Model Context Protocol server enabling Claude to interact with Microsoft Fabric and Power BI. Supports DAX query execution, dataset management, workspace operations, and notebook creation. Streamlines BI operations through conversational interface, reducing manual tasks by 60%.',

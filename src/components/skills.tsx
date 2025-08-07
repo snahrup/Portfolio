@@ -3,80 +3,118 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Code, Cpu, PenTool, Users } from 'lucide-react';
+import { Code, Cpu, Database, Cloud, Users, Brain } from 'lucide-react';
 
 const Skills = () => {
   const skillsData = [
     {
-      category: 'Frontend Development',
-      icon: <Code className="h-5 w-5" />,
+      category: 'Business Intelligence & Analytics',
+      icon: <Database className="h-5 w-5" />,
       skills: [
-        'HTML',
-        'CSS',
-        'JavaScript/TypeScript',
-        'Tailwind CSS',
-        'Bootstrap',
-        'Next.js',
-        'React',
-        'Vercel AI SDK',
-        'Gsap',
+        'Power BI',
+        'Microsoft Fabric',
+        'OneLake',
+        'Synapse Analytics',
+        'Data Factory',
+        'PySpark Notebooks',
+        'Semantic Models',
+        'DAX',
+        'Direct Lake',
+        'Row-Level Security',
+        'CI/CD for BI',
+        'Tableau',
       ],
       color: 'bg-blue-50 text-blue-600 border border-blue-200',
     },
     {
-      category: 'Backend & Systems',
+      category: 'Data Engineering & ETL',
       icon: <Cpu className="h-5 w-5" />,
       skills: [
-        'Unix',
-        'C',
-        'C++',
+        'Azure Data Factory',
+        'Apache Airflow',
+        'dbt',
+        'Fivetran',
+        'Pentaho',
+        'ETL/ELT Pipelines',
+        'Data Warehousing',
+        'AWS RDS',
+        'S3',
+        'SQL Server',
+        'PostgreSQL',
+        'Snowflake',
+      ],
+      color: 'bg-emerald-50 text-emerald-600 border border-emerald-200',
+    },    {
+      category: 'AI & Machine Learning',
+      icon: <Brain className="h-5 w-5" />,
+      skills: [
+        'OpenAI/GPT',
+        'LangChain',
+        'LangGraph',
+        'Pinecone',
+        'Vector Databases',
+        'RAG Implementation',
+        'Predictive Modeling',
+        'ML Forecasting',
+        'n8n Automation',
+        'GitHub Actions',
+        'Agent Frameworks',
+        'Hugging Face',
+      ],
+      color: 'bg-purple-50 text-purple-600 border border-purple-200',
+    },
+    {
+      category: 'Programming & Development',
+      icon: <Code className="h-5 w-5" />,
+      skills: [
         'Python',
-        'Typescript',
+        'TypeScript',
+        'JavaScript',
+        'SQL',
+        'DAX',
         'Git',
         'GitHub',
         'Docker',
-        'GCP',
-        'PostgreSQL',
+        'REST APIs',
+        'PySpark',
+        'C',
+        'C++',
       ],
-      color: 'bg-emerald-50 text-emerald-600 border border-emerald-200',
-    },
-    {
-      category: 'Design & Creative Tools',
-      icon: <PenTool className="h-5 w-5" />,
-      skills: ['Figma', 'Davinci Code', 'Illustrator', 'Canva', 'Keynote'],
       color: 'bg-indigo-50 text-indigo-600 border border-indigo-200',
     },
     {
-      category: 'Soft Skills',
-      icon: <Users className="h-5 w-5" />,
+      category: 'Cloud & Enterprise Systems',
+      icon: <Cloud className="h-5 w-5" />,
       skills: [
-        'Communication',
-        'Problem-Solving',
-        'Adaptability',
-        'Learning Agility',
-        'Teamwork',
-        'Creativity',
-        'Focus',
+        'Microsoft Azure',
+        'AWS',
+        'GCP',
+        'SAP',
+        'NetSuite',
+        'Databricks',
+        'SharePoint',
+        'Microsoft 365',
+        'Kubernetes',
+        'CI/CD Pipelines',
       ],
       color: 'bg-amber-50 text-amber-600 border border-amber-200',
     },
     {
-      category: 'AI & Fullstack Engineering',
-      icon: <Cpu className="h-5 w-5" />,
+      category: 'Leadership & Soft Skills',
+      icon: <Users className="h-5 w-5" />,
       skills: [
-        'LLM Providers (ChatGPT, Whisper, Groq, Mistral & Claude)',
-        'AI Agents',
-        'Prompt engineering',
-        'Vector databases (Weaviate, Pinecone)',
-        'RAG (Retrieval-Augmented Generation)',
-        'Tool routing & calling',
-        'Hugging Face Transformers',
-        'Vercel AI SDK',
-        'Supabase',
-        'Prisma',
-        'Next.js',
+        'Team Leadership (8-15 members)',
+        'Strategic Planning',
+        'Cross-functional Collaboration',
+        'Data Governance',
+        'Architecture Design',
+        'Stakeholder Management',
+        'Mentoring',
+        'Problem-Solving',
+        'Client Relations',
+        'Project Management',
       ],
-      color: 'bg-purple-50 text-purple-600 border border-purple-200',
+      color: 'bg-rose-50 text-rose-600 border border-rose-200',
     },
   ];
 
@@ -149,16 +187,11 @@ const Skills = () => {
                   initial="hidden"
                   animate="visible"
                 >
-                  {section.skills.map((skill, idx) => (
-                    <motion.div
-                      key={idx}
-                      variants={badgeVariants}
-                      whileHover={{
-                        scale: 1.04,
-                        transition: { duration: 0.2 },
-                      }}
-                    >
-                      <Badge className={`border px-3 py-1.5 font-normal`}>
+                  {section.skills.map((skill, skillIndex) => (
+                    <motion.div key={skillIndex} variants={badgeVariants}>
+                      <Badge
+                        className={`rounded-full px-3 py-1 ${section.color}`}
+                      >
                         {skill}
                       </Badge>
                     </motion.div>

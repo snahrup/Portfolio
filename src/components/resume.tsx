@@ -8,13 +8,13 @@ import Image from 'next/image';
 export function Resume() {
   // Resume details
   const resumeDetails = {
-    title: "Raphael's Resume",
-    description: 'Full Stack Developer • AI Specialist',
+    title: "Steve Nahrup's Resume",
+    description: 'Business Intelligence & AI Leader • 14+ Years Experience',
     fileType: 'PDF',
-    lastUpdated: 'March 2025',
+    lastUpdated: 'August 2025',
     fileSize: '0.5 MB',
-    previewImageSrc: '/resume_giraud_preview.png',
-    downloadUrl: '/resume_giraud.pdf',
+    previewImageSrc: '/steve_resume_preview.png',
+    downloadUrl: '/steve_nahrup_resume.pdf',
   };
 
   const handleDownload = () => {

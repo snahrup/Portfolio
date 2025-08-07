@@ -105,7 +105,7 @@ export default function Home() {
 
       <div className="absolute top-6 left-6 z-20">
         <button
-          onClick={() => goToChat('Are you looking for an internship?')}
+          onClick={() => goToChat('Tell me about your BI & AI expertise')}
           className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
         >
           {/* Green pulse dot */}
@@ -113,7 +113,7 @@ export default function Home() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
           </span>
-          Looking for a talent?
+          Open for Opportunities
         </button>
       </div>
 
@@ -129,10 +129,10 @@ export default function Home() {
         </div>
 
         <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Raphael 👋
+          Hey, I'm Steve 👋
         </h2>
         <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          AI Portfolio
+          BI & AI Leader
         </h1>
       </motion.div>
 

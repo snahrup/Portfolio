@@ -7,15 +7,14 @@ import React from 'react';
 export function Presentation() {
   // Personal information
   const profile = {
-    name: 'Raphael Giraud',
-    age: '21 years old',
-    location: 'Paris, France',
-    // Add a newline character after the emoji
+    name: 'Steve Nahrup',
+    title: 'Business Intelligence & AI Leader',
+    location: 'Charleston, SC',
     description:
-      "Hey 👋\nI'm Raph also known as Toukoum. I'm a developer specializing in AI at 42 Paris. I'm working at LightOn AI in Paris. I'm passionate about AI, tech, Entrepreneurship and SaaS tech.",
-    src: '/profil-raph.png',
+      "Hey 👋\nI'm Steve Nahrup, a seasoned BI & AI leader with 14+ years of enterprise success. I specialize in turning fragmented data into governed, predictive insights using Microsoft Fabric, Power BI, and AI-driven automation. Currently consulting as AI Automation Architect at Strainprint Technologies while running Blueprint Data Consulting.",
+    src: '/steve-profile.jpg',
     fallbackSrc:
-      'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
+      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
   };
 
   // Animation variants for text elements
@@ -41,7 +40,6 @@ export function Presentation() {
       },
     },
   };
-
   return (
     <div className="mx-auto w-full max-w-5xl py-6 font-sans">
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
@@ -81,7 +79,7 @@ export function Presentation() {
               {profile.name}
             </h1>
             <div className="mt-1 flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
-              <p className="text-muted-foreground">{profile.age}</p>
+              <p className="text-muted-foreground">{profile.title}</p>
               <div className="bg-border hidden h-1.5 w-1.5 rounded-full md:block" />
               <p className="text-muted-foreground">{profile.location}</p>
             </div>
@@ -100,19 +98,17 @@ export function Presentation() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-            className="mt-4 flex flex-wrap gap-2"
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="mt-6 flex flex-wrap gap-2"
           >
-            {['AI', 'Developer', '42 Paris', 'Sport', 'SaaS Builder'].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+            {['Power BI', 'Microsoft Fabric', 'AI Automation', 'Data Engineering', 'Cloud Architecture'].map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 text-xs font-medium bg-accent text-accent-foreground rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
           </motion.div>
         </div>
       </div>

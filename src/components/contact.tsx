@@ -7,33 +7,23 @@ import { ChevronRight } from 'lucide-react';
 export function Contact() {
   // Contact information
   const contactInfo = {
-    name: 'Raphael Giraud',
-    email: 'raphaelgiraud12@gmail.com',
-    handle: '@Raphael.Giraud',
+    name: 'Steve Nahrup',
+    email: 'steve.a.nahrup@gmail.com',
+    handle: '@snahrup',
+    location: 'Charleston, SC',
+    phone: '(312) 350-6854',
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raphael-giraud-60939519a/',
+        url: 'https://www.linkedin.com/in/steve-nahrup/',
       },
       {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@toukoum',
+        name: 'GitHub',
+        url: 'https://github.com/snahrup',
       },
       {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/raphael.giraud/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/toukoum',
-      },
-      {
-        name: 'Github',
-        url: 'https://github.com/toukoum',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/toukoumcode',
+        name: 'Email',
+        url: 'mailto:steve.a.nahrup@gmail.com',
       },
     ],
   };
@@ -51,9 +41,10 @@ export function Contact() {
           <h2 className="text-foreground text-3xl font-semibold md:text-4xl">
             Contacts
           </h2>
-          <span className="mt-2 sm:mt-0">
-            {contactInfo.handle}
-          </span>
+          <div className="mt-2 flex flex-col sm:mt-0 sm:text-right">
+            <span>{contactInfo.handle}</span>
+            <span className="text-sm text-muted-foreground">{contactInfo.location}</span>
+          </div>
         </div>
 
         {/* Email Section */}

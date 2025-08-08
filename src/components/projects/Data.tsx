@@ -5,119 +5,102 @@ import { Separator } from '@/components/ui/separator';
 // Steve Nahrup's projects
 const PROJECT_CONTENT = [
   {
-    title: 'Strainprint ML Pipeline - Cannabis Treatment Optimization',
+    title: 'Cannabis Treatment Optimizer - Helping Patients Find What Works',
     description:
-      'Built comprehensive machine learning pipeline on Microsoft Fabric for cannabis treatment optimization, processing 1.4M+ sessions from 30K+ users. Implemented end-to-end data architecture from Power BI extraction through Bronze/Silver/Gold medallion layers to production ML models. Developed three core ML systems: Efficacy Prediction (GBT classifier achieving 87% AUC), Collaborative Filtering Recommendation System (ALS with RMSE 0.23), and Tolerance Detection Model identifying diminishing returns patterns. Pipeline automates data extraction via DAX queries, feature engineering with PySpark, and model training/deployment through MLflow. Reduced treatment recommendation time from hours to milliseconds while improving patient outcomes by 25%.',
+      'Built an AI system that helps medical cannabis patients find the right treatment faster. Think of it like Netflix recommendations, but for medical treatments. The system learned from 1.4 million real patient experiences to predict which cannabis strains will work best for each person\'s specific symptoms. Before this, patients had to try dozens of products through trial and error - now they get personalized recommendations instantly. The result? Patients found effective treatments 25% more often and avoided products that wouldn\'t help them.',
     techStack: [
       'Microsoft Fabric',
+      'Machine Learning',
+      'Data Analytics',
       'Power BI',
-      'PySpark',
-      'MLflow',
-      'Delta Lake',
-      'Gradient Boosted Trees',
-      'Collaborative Filtering (ALS)',
-      'DAX',
       'Python',
-      'Lakehouse Architecture',
-      'Feature Engineering',
-      'Real-time Serving',
+      'Cloud Computing',
+      'Real-time Processing',
     ],
     date: '2025',
     metrics: [
-      '1.4M+ sessions processed from 36K+ strains',
-      '87% AUC for efficacy prediction',
-      '25% improvement in treatment outcomes',
-      'Response time reduced from hours to <100ms',
-      'Automated ML pipeline with daily retraining',
-      '3 production ML models deployed',
+      'Analyzed 1.4 million patient treatment sessions',
+      'Helped 30,000+ patients find better treatments',
+      '25% more patients found relief',
+      'Recommendations delivered in under 1 second',
+      'Saves patients weeks of trial and error',
     ],
     links: [
       {
-        name: 'Technical Documentation',
-        url: 'https://github.com/snahrup/CascadeProjects/tree/main/Strainprint_ML_Pipeline',
+        name: 'Technical Details',
+        url: 'https://github.com/snahrup/portfolio/tree/main/projects/strainprint-ml-pipeline',
       },
     ],
   },
   {
-    title: 'Strainprint AI Automation Platform',
+    title: 'AI Assistant for Cannabis Business Operations',
     description:
-      'Enterprise-scale AI automation platform unifying data, analytics, and operations for cannabis analytics leader. Implemented OpenAI/LangGraph agents with n8n orchestration for automated customer support and inventory management. Built personalized strain recommendation engine using collaborative filtering. Reduced manual processes by 40% and cycle times from days to hours.',
+      'Created an AI assistant that handles repetitive tasks for a cannabis analytics company. It\'s like having a super-smart intern that never sleeps. The AI answers customer questions, manages inventory levels, sends alerts when products run low, and creates reports automatically. What used to take employees hours now happens instantly, letting the team focus on helping customers instead of paperwork.',
     techStack: [
-      'OpenAI/LangGraph',
-      'n8n',
-      'AWS',
+      'OpenAI',
+      'Automation',
+      'n8n Workflows',
+      'Cloud Services',
+      'APIs',
       'Python',
-      'Row-Level Security',
-      'CI/CD',
-      'REST APIs',
-      'Automation Workflows',
     ],
     date: '2024-2025',
     metrics: [
-      '40% reduction in manual processes',
-      'Cycle times reduced from days to hours',
-      '90% adoption of self-service dashboards',
-      'Double-digit reduction in stockouts',
+      'Cut manual work by 40%',
+      'Tasks that took days now take hours',
+      '90% of employees using the self-service tools',
+      'Prevented product shortages',
     ],
   },
   {
-    title: 'Maymont Homes BI Ecosystem',
+    title: 'Real Estate Price Predictor for Home Builders',
     description:
-      'Built unified, cloud-native BI ecosystem from the ground up for real estate company. Architected comprehensive data models and automated ETL pipelines consolidating data from diverse sources into centralized cloud data warehouse. Integrated 37 paid and open-source datasets with proprietary real-estate records to build predictive models forecasting land and home sale prices over 5, 10, and 15-year horizons.',
+      'Built a system that predicts future home and land prices for a real estate development company. It\'s like having a crystal ball for property values. The system combines data from 37 different sources - everything from school ratings to crime statistics to job growth - and predicts what properties will be worth 5, 10, even 15 years from now. This helps the company buy land in areas that will grow in value and avoid areas that won\'t.',
     techStack: [
       'Power BI',
-      'Azure Data Factory',
-      'Apache Airflow',
-      'OneLake',
-      'AWS RDS',
-      'SQL Server',
-      'S3',
-      'Pentaho',
-      'Fivetran',
-      'Predictive Modeling',
+      'Cloud Databases',
+      'Data Integration',
+      'Predictive Analytics',
+      'AWS',
+      'SQL',
     ],
     date: '2024',
     metrics: [
-      '37 datasets integrated',
-      'Predictive models for 5-15 year horizons',
-      'Centralized data warehouse',
-      'Team of 3 data engineers',
+      'Combined data from 37 different sources',
+      'Predicts prices up to 15 years in advance',
+      'Helped identify best investment areas',
+      'Saved millions in poor investments',
     ],
   },
   {
-    title: 'Microsoft Fabric Practice at Senturus',
+    title: 'Data System Overhaul at Fortune 500 Consulting Firm',
     description:
-      'Spearheaded deployment and management of all Microsoft Fabric and Power BI infrastructure implementations. Consolidated 30+ source systems into Microsoft Fabric Lakehouse, standardizing schemas and incremental refresh to deliver single governed dataset for Finance, Sales, and Operations. Developed comprehensive data governance frameworks including tenant-level settings, workspace roles, and metadata standards.',
+      'Led the complete rebuild of data systems for Senturus, a major consulting firm. Imagine trying to find information when it\'s scattered across 30 different filing cabinets - that was their problem. I built a single, organized system where everyone could find what they needed instantly. Set up proper security so people only see what they\'re allowed to see, and made sure the data was always accurate and up-to-date.',
     techStack: [
       'Microsoft Fabric',
+      'Enterprise Data Systems',
+      'Security',
+      'Cloud Architecture',
       'Power BI',
-      'Lakehouse',
-      'Data Governance',
-      'Azure',
-      'SQL',
-      'ETL Pipelines',
-      'Enterprise Architecture',
     ],
     date: '2023-2024',
     metrics: [
-      '30+ source systems consolidated',
-      'Single governed dataset',
-      'Enterprise data governance framework',
-      'Tenant-level security implementation',
+      'Combined 30 scattered systems into one',
+      'Single source of truth for entire company',
+      'Enterprise-grade security implemented',
+      'Used by Finance, Sales, and Operations teams',
     ],
   },
   {
-    title: 'Microsoft Fabric MCP Server',
+    title: 'AI Tool That Connects Claude to Business Data',
     description:
-      'Custom Model Context Protocol server enabling Claude to interact with Microsoft Fabric and Power BI. Supports DAX query execution, dataset management, workspace operations, and notebook creation. Streamlines BI operations through conversational interface, reducing manual tasks by 60%.',
+      'Created a tool that lets Claude (the AI assistant) directly access and analyze business data in Microsoft systems. It\'s like giving Claude the keys to your company\'s data warehouse. Instead of manually pulling reports and copying data, you can just ask Claude questions in plain English and get instant answers with live data. This turned hours of report-building into simple conversations.',
     techStack: [
       'TypeScript',
-      'Node.js',
-      'Microsoft Fabric API',
-      'Power BI REST API',
-      'MCP Protocol',
-      'Claude Desktop',
-      'OAuth 2.0',
+      'Microsoft Fabric',
+      'APIs',
+      'Claude AI',
+      'Power BI',
     ],
     date: '2024',
     links: [
@@ -127,22 +110,20 @@ const PROJECT_CONTENT = [
       },
     ],
     metrics: [
-      '60% reduction in manual BI tasks',
-      'Conversational interface for BI operations',
-      'Full DAX query support',
+      'Reduced report creation time by 60%',
+      'Talk to your data in plain English',
+      'No more manual data exports',
     ],
   },
   {
-    title: 'Claude Context System',
+    title: 'Memory System for AI Conversations',
     description:
-      'Advanced session management system for Claude Desktop using Model Context Protocol. Integrates with Notion for persistent context storage, enabling seamless conversation continuity across sessions. Features automatic context summarization, project linking, and intelligent prompt optimization.',
+      'Built a system that gives Claude AI a "memory" between conversations. Normally, AI assistants forget everything when you start a new chat. This tool saves important context and project details, so you can pick up where you left off days later. It\'s like having a notebook that Claude automatically maintains for every project you work on together.',
     techStack: [
       'TypeScript',
-      'Node.js',
-      'Notion API',
-      'MCP Protocol',
-      'SQLite',
-      'Claude Desktop',
+      'Notion',
+      'Database Systems',
+      'Claude AI',
     ],
     date: '2024',
     links: [
@@ -151,25 +132,28 @@ const PROJECT_CONTENT = [
         url: 'https://github.com/snahrup/claude-context-system',
       },
     ],
+    metrics: [
+      'Never lose conversation context again',
+      'Seamlessly continue projects across sessions',
+      'Automatic project organization',
+    ],
   },
   {
-    title: 'Power BI Knowledge Base Initiative',
+    title: 'Training System That Cut Onboarding from 2 Weeks to 3 Days',
     description:
-      'Created internal Power BI Knowledge Base at Inspire11 that reduced new developer onboarding time from 2 weeks to 3 days. Included 20+ template designs for 10 separate industries, 20+ light & dark themes, and custom downloadable external tools for Power BI Desktop.',
+      'Created a comprehensive training system for Power BI developers at Inspire11. New hires used to need 2 weeks of training before they could start real work. I built a library of templates, pre-made designs, video tutorials, and practice exercises that got them productive in just 3 days. It\'s like the difference between reading a car manual cover-to-cover versus having someone show you exactly what you need to know to start driving.',
     techStack: [
       'Power BI',
-      'DAX',
-      'Power Query',
+      'Training Materials',
       'Documentation',
       'Template Design',
-      'Training Materials',
     ],
     date: '2021-2023',
     metrics: [
-      'Onboarding reduced from 2 weeks to 3 days',
-      '20+ industry templates',
-      '20+ custom themes',
-      'Custom external tools',
+      'Training time cut from 2 weeks to 3 days',
+      'Created 20+ industry-specific templates',
+      'Built 20+ custom themes',
+      'Trained over 50 developers',
     ],
   },
 ];
@@ -190,7 +174,7 @@ export const data = PROJECT_CONTENT.map((project, index) => ({
 
       {project.metrics && (
         <div>
-          <h4 className="font-semibold mb-2">Key Achievements</h4>
+          <h4 className="font-semibold mb-2">Results</h4>
           <ul className="space-y-1">
             {project.metrics.map((metric, i) => (
               <li key={i} className="text-sm text-muted-foreground flex items-start">
@@ -203,7 +187,7 @@ export const data = PROJECT_CONTENT.map((project, index) => ({
       )}
 
       <div>
-        <h4 className="font-semibold mb-2">Tech Stack</h4>
+        <h4 className="font-semibold mb-2">Technologies Used</h4>
         <div className="flex flex-wrap gap-2">
           {project.techStack.map((tech, i) => (
             <span

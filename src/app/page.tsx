@@ -22,8 +22,8 @@ const questions = {
   Me: 'Who are you? I want to know more about you.',
   Projects: 'What are your projects? What are you working on right now?',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
-  Fun: 'What's the craziest thing you've ever done? What are your hobbies?',
-  Contact: 'How can I contact you?',
+  Fun: "What's the craziest thing you've ever done? What are your hobbies?",
+  Contact: 'How can I contact you?'
 } as const;
 
 const questionConfig = [
@@ -178,7 +178,7 @@ export default function Home() {
               aria-label="Submit question"
               className="flex items-center justify-center rounded-full bg-[#0171E3] p-2.5 text-white transition-colors hover:bg-blue-600 disabled:opacity-70 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
-              <ArrowRight  className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5" />
             </button>
           </div>
         </form>

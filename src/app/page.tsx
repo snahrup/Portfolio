@@ -10,7 +10,6 @@ import {
   BriefcaseBusiness,
   Laugh,
   Layers,
-  PartyPopper,
   UserRoundSearch,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -22,7 +21,6 @@ const questions = {
   Me: 'Who are you? I want to know more about you.',
   Projects: 'What are your projects? What are you working on right now?',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
-  Fun: "What's the craziest thing you've ever done? What are your hobbies?",
   Contact: 'How can I contact you?'
 } as const;
 
@@ -30,7 +28,6 @@ const questionConfig = [
   { key: 'Me', color: '#329696', icon: Laugh },
   { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
   { key: 'Skills', color: '#856ED9', icon: Layers },
-  { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
   { key: 'Contact', color: '#C19433', icon: UserRoundSearch },
 ] as const;
 
@@ -183,8 +180,8 @@ export default function Home() {
           </div>
         </form>
 
-        {/* quick-question grid */}
-        <div className="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-5">
+        {/* quick-question grid - now with 4 buttons instead of 5 */}
+        <div className="mt-4 grid w-full max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
           {questionConfig.map(({ key, color, icon: Icon }) => (
             <Button
               key={key}

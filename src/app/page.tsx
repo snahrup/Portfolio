@@ -22,7 +22,7 @@ const questions = {
   Me: 'Who are you? I want to know more about you.',
   Projects: 'What are your projects? What are you working on right now?',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
-  Fun: 'What’s the craziest thing you’ve ever done? What are your hobbies?',
+  Fun: 'What's the craziest thing you've ever done? What are your hobbies?',
   Contact: 'How can I contact you?',
 } as const;
 
@@ -76,7 +76,7 @@ export default function Home() {
     const linkMp4 = document.createElement('link');
     linkMp4.rel = 'prefetch';
     linkMp4.as = 'video';
-    linkMp4.href = '/final_memojis_ios.mp4';
+    linkMp4.href = '/Memoji_Animation_Smile_to_Speak_Loop.mp4';
     document.head.appendChild(linkMp4);
   }, []);
 
@@ -137,14 +137,14 @@ export default function Home() {
       </motion.div>
 
       {/* centre memoji */}
-      <div className="relative z-10 h-52 w-48 overflow-hidden sm:h-72 sm:w-72">
+      <div className="relative z-10 h-52 w-52 overflow-hidden sm:h-72 sm:w-72">
         <Image
           src="/landing-memojis.png"
           alt="Hero memoji"
-          width={2000}
-          height={2000}
+          width={500}
+          height={500}
           priority
-          className="translate-y-14 scale-[2] object-cover"
+          className="h-full w-full object-contain"
         />
       </div>
 

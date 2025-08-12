@@ -13,40 +13,41 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Toukoum Portfolio",
-  description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
+  title: "Steve Nahrup Portfolio",
+  description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience in Business Intelligence and AI",
   keywords: [
-    "Toukoum", 
+    "Steve Nahrup", 
     "Portfolio", 
     "Developer", 
     "AI", 
     "Interactive", 
     "Memoji", 
     "Web Development",
-    "Full Stack",
+    "Business Intelligence",
+    "Data Analytics",
     "Next.js",
     "React"
   ],
   authors: [
     {
-      name: "Toukoum",
-      url: "https://toukoum.fr",
+      name: "Steve Nahrup",
+      url: "https://snahrup.vercel.app",
     },
   ],
-  creator: "Toukoum",
+  creator: "Steve Nahrup",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toukoum.fr",
-    title: "Toukoum Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Toukoum Portfolio",
+    url: "https://snahrup.vercel.app",
+    title: "Steve Nahrup Portfolio",
+    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and experience",
+    siteName: "Steve Nahrup Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Toukoum Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    creator: "@toukoum",
+    title: "Steve Nahrup Portfolio",
+    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and experience",
+    creator: "@snahrup",
   },
   icons: {
     icon: [
